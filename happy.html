@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mood</title>
+    <link rel="stylesheet" href="happy.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="confetti-container"></div>
+
+    <header>
+        <h1>You're Feeling Happy! 😃</h1>
+        <p>Enjoy your joyful moment with fun surprises below!</p>
+    </header>
+
+    <!-- Music Player -->
+    <section class="music-section">
+        <h2>Listen to Uplifting Music 🎶</h2>
+        <audio controls>
+            <source src="happy_song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Positive Quotes & Jokes -->
+    <section class="quotes-section">
+        <h2>Get Inspired & Laugh 😂</h2>
+        <p id="quote"></p>
+        <button onclick="generateQuote()">New Quote</button>
+    </section>
+
+    <footer>
+        <a href="homepage.html">Go Back</a>
+    </footer>
+
+    <script src="happy.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-icon {
+    font-size: 38px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2);
+}
+
+.profile-details{
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.profile-details:hover{
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+.mood-category{
+    text-align: center;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mood-row{
+    display: flex;
+    gap: 10px;
+}
+
+.mood-buttons {
+    background: white;
+    border: none;
+    padding: 100px;
+    margin: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mood-buttons i{
+    font-size: 100px;
+    color: #444;
+    transition: transform 0.2s, color 0.3s;
+    font-size: 6rem;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.mood-buttons:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-color: #333;
+    transform: scale(1.1);
+}
+
+.mood-buttons:hover i{
+    color: grey;
+}
+
+.angry:hover i{
+    color: red;
+}
+
+.happy:hover i{
+    color: #ffcc00;
+}
+
+.sad:hover i{
+    color: green;
+}
+
+.neutral:hover i{
+    color: #007bff;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    color: white;
+    padding: 15px;
+    
+}
+
+.footer-btn{
+    background: none;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.footer-btn i{
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.footer-btn:hover i{
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px){
+    .mood-buttons{
+        padding: 15px;
+    }
+}
+ @import url('https://fonts.googleapis.com/css2?family=Monsterrat:wght@300;400;600&display=swap');
+
+ body {
+    font-family: 'Monsterrat', sans-serif;
+    background: linear-gradient(to bottom, #87CEFA, #ffffff);
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    background: #222;
+    color: white;
+    transition: 0.3s ease-in-out;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+}
+
+.sidebar.active {
+    left: 0;
+}

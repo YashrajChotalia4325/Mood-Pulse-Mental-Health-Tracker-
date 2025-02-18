@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Pulse</title>
+    <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon">&#9776;</div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Login Details</a></li>
+                <li><a href="#">Know More</a></li>
+                <li><a href="#">Add Account</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <h1 class="logo">Mood Pulse</h1>
+        <div class="profile-details"><i class="fas fa-user-circle"></i></div>
+    </header>
+
+    <section class="mood-category">
+        <h2 class="heading">How Are You Feeling Today?</h2>
+        <div class="mood-buttons">
+            <div class="mood-row">
+            <button class="happy" data-mood="happy"><i class="fas fa-smile"></i></button>
+            <button class="sad" data-mood="sad"><i class="fas fa-frown"></i></button>
+            </div>
+            <div class="mood-row">
+            <button class="angry" data-mood="angry"><i class="fas fa-angry"></i></button>
+            <button class="neutral" data-mood="neutral"><i class="fas fa-meh"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button class="footer-btn" onclick="openInsights()"><i class="fas fa-chart-bar"></i>Insights</button>
+        <button class="footer-btn" onclick="openChatBot()"><i class="fas fa-robot"></i>AI ChatBot</button>
+        <button class="footer-btn" onclick="openMoodHistory()"><i class="fas fa-history"></i>Mood History</button>
+    </footer>
+    <script src="homepage.js"></script>
+</body>
+</html>
